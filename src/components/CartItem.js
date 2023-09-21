@@ -22,7 +22,7 @@ const CartItem = ({ item }) => {
           {/* title  */}
           <Link to={`/product/${id}`} className='text-sm uppercase font-medium max-w[240px] text-primary hover:underline'>{title}</Link>
           {/* remove icon  */}
-          <div onClick={() => removeFromCart(id)} className='text-xl cursor-pointer'><IoMdClose className='text-gray-500 hover:text-red-500 transition' /></div>
+          <div onClick={() => removeFromCart(id)} className='text-xl cursor-pointer'><IoMdClose className='text-gray-500 hover:text-[#1861b6] transition' /></div>
         </div>
         <div className=' flex gap-x-2 h-[36px] text-sm'>
           {/* quantity  */}
