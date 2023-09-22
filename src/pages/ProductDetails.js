@@ -19,19 +19,19 @@ const ProductDetails = () => {
   })
   //if product is not found
   if (!product) {
-    return <section className='h-screen flex justify-center items-center'>
+    return <section className='flex items-center justify-center h-screen '>
       Loading...
     </section>
   }
   // descturture the product
   const { title, price, description, image } = product;
 
-  return <section className='pt-32 pb-12 lg:py-32 h-screen flex items-center'>
+  return <section className='flex items-center h-screen pt-32 pb-12 lg:py-32'>
     <div className="container mx-auto">
       {/* image & text wrapper  */}
-      <div className='flex flex-col lg:flex-row items-center'>
+      <div className='flex flex-col items-center lg:flex-row'>
         {/* image  */}
-        <div className='flex flex-1 justify-center items-center mb-8 lg:mb-0 '>
+        <div className='flex items-center justify-center flex-1 mb-8 lg:mb-0 '>
           <img className='max-w-[200px] lg:max-w-sm' src={image} alt="" />
         </div>
         {/* Text  */}
