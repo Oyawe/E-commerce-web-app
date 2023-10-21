@@ -32,7 +32,7 @@ const CartProvider = ({ children }) => {
     //chech if the item is already in the cart
     const cartItem = cart.find(item => item.id === id)
     // console.log(cartItem)
-    // if cart is already in the cart
+    // if item is already in the cart
     if (cartItem) {
       const newCart = [...cart].map(item => {
         if (item.id === id) {
